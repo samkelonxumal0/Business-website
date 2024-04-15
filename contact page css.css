@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../SAMKELO/th.jpg');
+    background-size: cover;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: rgba(151, 5, 5, 0.5); /* Semi-transparent background for better readability */
+    color: #0cfcdc;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    font-style: italic;
+    font-weight: bold;
+    animation: moveText 2s infinite;
+}
+h1 {
+    font-size: 3em;
+    font-style: italic;
+    font-weight: bold;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes moveText {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: rgba(218, 15, 15, 0.5); /* Semi-transparent background for better readability */
+    color: #000000;
+    padding: 10px 0;
+}
+
+/* Animations */
+.animated-heading {
+    animation: fadeIn 2s ease-out;
+}
+
+.animated-image {
+    animation: slideIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #cc0000;
+}

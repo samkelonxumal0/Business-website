@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../SAMKELO/R.png');
+    background-size: inherit;
+}
+
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    animation: moveText 2s infinite;
+}
+
+@keyframes moveText {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(20px);}
+    100% {transform: translateX(0);}
+}
+video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000; /* Border around the video */
+    padding: 10px; /* Padding around the video */
+    margin: 50px auto; /* Center align horizontally */
+    max-width: 800px; /* Maximum width of the video container */
+}
+
+video {
+    max-width: 100%; /* Ensure the video does not exceed the container width */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.animated-heading {
+    animation: fadeIn 2s ease-out;
+}
+
+.animated-image {
+    animation: slideIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+} 
+
